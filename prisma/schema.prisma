@@ -15,3 +15,11 @@ model User {
   password  String
   createdAt DateTime @default(now())
 }
+model Student {
+  prn        String @id
+  name       String
+  email      String
+  department String
+
+  @@map("students")
+}
